@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Go Canvas</title>
+		<link rel="stylesheet" href="index.css" type="text/css" />
+		<!--  CSS  -->
+		<link rel="stylesheet" href="JQ/bootstrap.css" type="text/css" />
+		<!--  BOOTSTRAP  -->
+	</head>
+	<body class="noscroll">
+		<div id="loadingPageWrapper">
+			<div class="loadingPage">
+				<h1>division form report</h1>
+				<div class="caption">
+					<ul>
+						<li>always</li>
+						<li>remember,</li>
+						<li>if</li>
+						<li>you</li>
+						<li>see</li>
+						<li>something,</li>
+						<li>say</li>
+						<li>something</li>
+					</ul>
+				</div>
+				<div class="spinWrapper">
+					<div class="spinner"></div>
+				</div>
+			</div>
+		</div>
+		<div class="top">
+			<h3>Incident Report Form</h3>
+			<div class="navBtn">
+				<button class="btn myBtn">...</button>
+			</div>
+		</div>
+		<div class="body sectionA translated">
+			<div class="mainBody1">
+				<h2 class="section">section a</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div>
+							<h6 class="inputHead">
+								division <span class="requiredA">*This Field is required</span>
+							</h6>
+							<input class="myInputA" type="text" name="Division" required />
+						</div>
+						<div>
+							<h6 class="inputHead">
+								location <span class="requiredA">*This Field is required</span>
+							</h6>
+							<input class="myInputA" type="text" name="location" required />
+						</div>
+						<div>
+							<h6
+								class="inputHead"
+								style="font-size: 11px; text-transform: none"
+							>
+								Is this incident classed as a "serious harm"? (i.e has the Dept
+								of labour been notified?)
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<input
+								class="myInputA"
+								type="text"
+								name="Incident class"
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">incident date</h6>
+							<input
+								class="myDate"
+								type="date"
+								name="incident date"
+								onfocus="dateInput(this)"
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">incident time</h6>
+							<input
+								class="myTime"
+								type="time"
+								name="incident time"
+								onfocus="timeInput(this)"
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								category <span class="requiredA">*This Field is required</span>
+							</h6>
+							<input class="myInputA" type="text" name="category" required />
+						</div>
+						<div>
+							<h6 class="inputHead">
+								type of incident
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<input
+								class="myInputA"
+								type="text"
+								name="type of incident"
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								person/assets involved
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<textarea
+								class="myInputA"
+								type="text"
+								name="involved"
+								required
+							></textarea>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								witnesses <span class="requiredA">*This Field is required</span>
+							</h6>
+							<textarea
+								class="myInputA"
+								type="text"
+								name="witnesses"
+								required
+							></textarea>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								reported by
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<input class="myInputA" type="text" name="report" required />
+						</div>
+						<div>
+							<h6 class="inputHead">date reported</h6>
+							<input
+								class="myDate"
+								type="date"
+								name="report"
+								onfocus="dateInput(this)"
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								possible cause
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<input class="myInputA" type="text" name="cause" required />
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">
+								Brief Description of Incident Activity at Time of Incident
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<textarea
+								class="myInputA"
+								type="text"
+								name="Description"
+								required
+							></textarea>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								immediate response
+								<span class="requiredA">*This Field is required</span>
+							</h6>
+							<textarea
+								class="myInputA"
+								type="text"
+								name="response"
+								required
+							></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="body bodyUp sectionB transOut">
+			<div class="mainBody1">
+				<h2 class="section">section b</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div>
+							<h6 class="inputHead">
+								line management
+								<span class="requiredB">*This Field is required</span>
+							</h6>
+							<input class="myInputB" type="text" name="line management" />
+						</div>
+						<div>
+							<h6 class="inputHead">date</h6>
+							<input
+								class="myDate"
+								type="date"
+								name="date"
+								onfocus="dateInput(this)"
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">
+								GM <span class="requiredB">*This Field is required</span>
+							</h6>
+							<input class="myInputB" type="text" name="GM" />
+						</div>
+						<h5 class="notify">Whom Notified</h5>
+						<div>
+							<h6 class="inputHead">DGM</h6>
+							<select name="dgm">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">fire & rescue ?</h6>
+							<select name="fire & rescue">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">ambulance ?</h6>
+							<select name="ambulance">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">police ?</h6>
+							<select name="police">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">insurance ?</h6>
+							<select name="insurance">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">family ?</h6>
+							<select name="family">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">
+								HP Directors ?
+							</h6>
+							<select name="Directors">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								further reports required
+								<span class="requiredB">*This Field is required</span>
+							</h6>
+							<input class="myInputB" type="text" name="reports" />
+						</div>
+						<div>
+							<h6 class="inputHead">
+								property loss/damage
+								<span class="requiredB">*This Field is required</span>
+							</h6>
+							<textarea class="myInputB" type="text" name="property"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="body bodyUp sectionC transOut">
+			<div class="mainBody1">
+				<h2 class="section">section c</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div>
+							<h6 class="notify">injury details</h6>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								injured person
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input
+								class="myInputC"
+								type="text"
+								name="injured person "
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">DOB</h6>
+							<input
+								class="myDate"
+								type="date"
+								name="date"
+								onfocus="dateInput(this)"
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">gender</h6>
+							<select name="gender">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								employment status
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input class="myInputC" type="text" name="employment" required />
+						</div>
+						<div>
+							<h6 class="inputHead">
+								occupation
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input class="myInputC" type="text" name="occupation" required />
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">
+								No of Hours Worked Prior to Injury
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input
+								class="myInputC"
+								type="text"
+								name="hours worked"
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								injury details
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<textarea
+								class="myInputC"
+								type="text"
+								name="Description"
+								required
+							></textarea>
+						</div>
+						<div>
+							<h6 class="inputHead" style="text-transform: none">
+								Nature of Injury
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input class="myInputC" type="text" name="nature" required />
+						</div>
+						<div>
+							<h6 class="inputHead">date assigned</h6>
+							<input
+								class="myDate"
+								type="date"
+								name="assigned"
+								onfocus="dateInput(this)"
+								required
+							/>
+						</div>
+						<div>
+							<h6 class="inputHead">
+								treatment given
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input class="myInputC" type="text" name="cause" required />
+						</div>
+						<div>
+							<h6 class="inputHead">
+								assigned by
+								<span class="requiredC">*This Field is required</span>
+							</h6>
+							<input class="myInputC" type="text" name="assigned" required />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="body bodyUp report transOut">
+			<div class="mainBody1" style="height: 40vh">
+				<h2 class="section">report completed by</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div class="togeda">
+							<h6 class="inputHead" style="font-size: 13px">signed</h6>
+							<input
+								class="myInput"
+								type="text"
+								name="signed"
+								placeholder="Capture Signature"
+							/>
+						</div>
+						<div class="togeda">
+							<h6 class="inputHead" style="font-size: 12px">
+								this report completed by
+							</h6>
+							<input class="myInput" type="text" name="report" required />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div style="height: 42vh"></div>
+		</div>
+		<div class="body bodyUp review transOut">
+			<div class="mainBody1" style="height: 42vh">
+				<h2 class="section">reviewed by manager</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div class="togeda">
+							<h6 class="inputHead">signed</h6>
+							<input
+								class="myInput dis"
+								type="text"
+								name="signed"
+								placeholder="Capture Signature"
+							/>
+						</div>
+						<div class="togeda">
+							<h6 class="inputHead">reviewed by <span> manager </span></h6>
+							<input class="myInput dis" type="text" name="review" required />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div style="height: 40vh"></div>
+		</div>
+		<div class="body bodyUp date2 transOut">
+			<div class="mainBody1" style="height: 32vh">
+				<h2 class="section">date 2</h2>
+				<div id="Inputs">
+					<form action="something.php">
+						<div>
+							<h6 class="inputHead" style="font-size: 17px">
+								date of submission
+							</h6>
+							<input
+								class="myInput"
+								type="date"
+								name="signed"
+								placeholder="Capture Signature"
+								onclick="dateInput(this)"
+							/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div style="height: 50vh"></div>
+		</div>
+		<div class="body bodyUp submission transOut">
+			<div class="mainBody1" style="height: 52vh">
+				<h2 class="section">complete submission</h2>
+				<div id="Inputsub">
+					<form action="something.php">
+						<div>
+							<h6 class="inputHead mailHead">Email copy of submission:</h6>
+							<textarea
+								class="submitText"
+								name="submit"
+								placeholder="Please enter Email..."
+							></textarea>
+						</div>
+						<div class="switches">
+							<div class="togeda geda">
+								<h6 class="inputHead" style="text-transform: none">
+									Email me a copy
+								</h6>
+								<label class="switch">
+									<input type="checkbox" checked />
+									<span class="slider round" onclick="changeVa()"></span>
+								</label>
+								<p class="switchValue switchValueOn show">On</p>
+								<p class="switchValue switchValueOff noshow">Off</p>
+							</div>
+							<div class="togeda geda">
+								<h6 class="inputHead" style="text-transform: none">
+									Sync after tapping Submit
+								</h6>
+								<label class="switch">
+									<input type="checkbox" checked />
+									<span class="slider round" onclick="changeVal()"></span>
+								</label>
+								<p class="switchValue switchValueOn1 show">On</p>
+								<p class="switchValue switchValueOff1 noshow">Off</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div style="height: 30vh"></div>
+		</div>
+
+		<div class="bottom">
+			<button class="btn back" onclick="goBack()">Back</button>
+			<div class="proBar progress-bar-striped">
+				<div class="progressBarFilled"></div>
+				<div class="progressBar">0%</div>
+			</div>
+			<button class="btn next" onclick="goNext()" type="submit">Next</button>
+		</div>
+		<script src="JQ/jquery-3.6.0.min.js" type="text/javascript"></script>
+		<script src="index.js" type="text/javascript"></script>
+	</body>
+</html>
